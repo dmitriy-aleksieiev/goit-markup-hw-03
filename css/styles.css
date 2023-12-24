@@ -1,6 +1,6 @@
-/* PART I ROOT */
+/* ⭐ PART I ROOT */
 
-/* PART II GLOBAL & HIDDEN */
+/* ⭐ PART II GLOBAL & HIDDEN */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -46,9 +46,11 @@ img {
   margin: -1px;
 }
 
-/*  PART III TYPOGRAPHY   */
+/* ⭐ PART III TYPOGRAPHY   */
 
 .logo {
+  padding-right: 76px;
+
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -87,6 +89,8 @@ img {
 }
 
 .header__address {
+margin-left: auto;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -145,14 +149,14 @@ img {
   color: #f4f4fd;
 }
 
-/*  PART IV BUTTONS   */
+/* ⭐ PART IV BUTTONS   */
 
 .button {
   /* font-family: "Roboto", sans-serif; */
   font-family: inherit;
-  /* border-radius: 4px; */
+  border-radius: 4px;
   background-color: #4d5ae5;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   font-size: 16px;
   font-weight: 500;
@@ -169,7 +173,7 @@ img {
   background-color: #404bbf;
 }
 
-/*  PART V SECTION   */
+/* ⭐ PART V SECTION & CONTAINER  */
 
 .hero,
 .footer {
@@ -180,7 +184,38 @@ img {
   background-color: #f4f4fd;
 }
 
-/*  PART VI OTHER   */
+.container {
+  width: 1158px;
+  /* TODO: max-width:  */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid lightskyblue;
+  outline-offset: -1px;
+}
+
+.flex {
+  display: flex;
+}
+
+.header__list {
+  display: flex;
+  padding: 24px 0;
+}
+
+.header__container,
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__list li {
+  gap: 40px;
+}
+
+/* ⭐ PART VI OTHER   */
 
 .team__item {
   background-color: #ffffff;
