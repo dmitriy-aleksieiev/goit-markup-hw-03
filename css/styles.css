@@ -49,7 +49,9 @@ img {
 /* ⭐ PART III TYPOGRAPHY   */
 
 .logo {
-  padding-right: 76px;
+  margin-right: 76px;
+
+  padding: 25px 0;
 
   color: #2e2f42;
   font-family: "Raleway", sans-serif;
@@ -81,7 +83,14 @@ img {
   letter-spacing: 0.02em;
 
   color: #2e2f42;
+
+  display: block;
+  padding: 24px 0;
 }
+
+/* .header_list_item {
+  padding: 24px 0;
+} */
 
 .header__link:hover,
 .header__link:focus {
@@ -89,7 +98,7 @@ img {
 }
 
 .header__address {
-margin-left: auto;
+  margin-left: auto;
 
   font-size: 16px;
   line-height: 1.5;
@@ -99,12 +108,20 @@ margin-left: auto;
   color: #434455;
 }
 
+.header__address-item {
+  display: block;
+  padding: 24px;
+}
+
 .header__address:hover,
 .header__address:focus {
   color: #404bbf;
 }
 
 .hero-title {
+  padding-top: 188px;
+  padding-bottom: 40px;
+
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -139,6 +156,10 @@ margin-left: auto;
   text-align: center;
 }
 
+.three_title_benefits {
+  text-align: left;
+}
+
 .body-text {
   font-size: 16px;
   line-height: 1.5;
@@ -152,6 +173,11 @@ margin-left: auto;
 /* ⭐ PART IV BUTTONS   */
 
 .button {
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 188px;
+
   /* font-family: "Roboto", sans-serif; */
   font-family: inherit;
   border-radius: 4px;
@@ -189,6 +215,7 @@ margin-left: auto;
   /* TODO: max-width:  */
   padding-left: 15px;
   padding-right: 15px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -202,7 +229,8 @@ margin-left: auto;
 
 .header__list {
   display: flex;
-  padding: 24px 0;
+
+  gap: 40px;
 }
 
 .header__container,
@@ -211,12 +239,31 @@ margin-left: auto;
   align-items: center;
 }
 
-.header__list li {
-  gap: 40px;
-}
-
 /* ⭐ PART VI OTHER   */
 
 .team__item {
   background-color: #ffffff;
+  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
+}
+
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefits__container {
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.team__container {
+  display: flex;
+  justify-content: center;
 }
