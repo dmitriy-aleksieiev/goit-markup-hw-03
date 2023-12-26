@@ -1,5 +1,27 @@
 /* ⭐ PART I ROOT */
 
+:root {
+/* fonts */
+--main-font: "Roboto", sans-serif;
+--logo-font: "Raleway", sans-serif;
+
+/* colors */
+--accent-main-color: #4d5ae5;  
+--accent-second-color: #404bbf;
+--auxiliary-one-color: #31d0aa;
+--servo-first-color: #f4f4fd;
+--servo-second-color: #8e8f99;
+--servo-third-color: #e7e9fc;
+--dark-main-color: #2e2f42;
+--dark-second-color: #434455;
+--light-main-color: #ffffff;
+--light-second-color: #f4f4fd;
+--accent-main-color: #4d5ae5;  
+
+/* other */
+/_ --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ⭐ PART II GLOBAL & HIDDEN */
 
 body {
@@ -46,7 +68,33 @@ img {
   margin: -1px;
 }
 
-/* ⭐ PART III TYPOGRAPHY   */
+/* ⭐ PART III SECTION & CONTAINER   */
+
+.container {
+  width: 1158px;
+  /* TODO: max-width:  */
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid lightskyblue;
+  outline-offset: -1px;
+}
+
+.header__container {
+  display: flex;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* ⭐ PART IV TYPOGRAPHY   */
 
 .logo {
   margin-right: 76px;
@@ -61,7 +109,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #4d5ae5;
+  color:var(--accent-main-color);
+
 }
 
 /* .logo--color-part {
@@ -199,6 +248,40 @@ img {
   background-color: #404bbf;
 }
 
+
+/*
+  |==============================
+  | HEADER ☘
+  |==============================
+*/
+
+.header__navigation {
+
+}
+
+.header__pagination {
+
+}
+
+.header__pagination-item {
+
+}
+
+.header__address {
+
+}
+
+.header__address-item {
+
+}
+
+
+
+
+
+
+
+
 /* ⭐ PART V SECTION & CONTAINER  */
 
 .hero,
@@ -210,18 +293,7 @@ img {
   background-color: #f4f4fd;
 }
 
-.container {
-  width: 1158px;
-  /* TODO: max-width:  */
-  padding-left: 15px;
-  padding-right: 15px;
 
-  margin-left: auto;
-  margin-right: auto;
-
-  outline: 1px solid lightskyblue;
-  outline-offset: -1px;
-}
 
 .flex {
   display: flex;
@@ -233,7 +305,6 @@ img {
   gap: 40px;
 }
 
-.header__container,
 .header__navigation {
   display: flex;
   align-items: center;
@@ -251,11 +322,7 @@ img {
   margin-right: 0;
 }
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 .benefits__container {
   display: flex;
