@@ -173,8 +173,6 @@ img {
   text-align: center;
 
   color: var(--dark-main-color);
-
-  max-width: 496px;
 }
 
 .subtitle {
@@ -349,6 +347,10 @@ img {
   gap: 24px;
 }
 
+.benefits__list-li {
+  width: calc((100% - 72px) / 4);
+}
+
 /*
   |==============================
   | TEAM ☘
@@ -400,7 +402,8 @@ img {
 
   background-color: var(--light-main-color);
 
-  border: 1px solid var(--servo-third-color);
+  /* border: 1px solid var(--servo-third-color); */
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio__card-holder {
@@ -415,4 +418,6 @@ img {
 .footer__logo {
   display: flex;
   margin-bottom: 16px;
+
+  display: inline-block;
 }
