@@ -37,31 +37,32 @@
     <header>
       <div class="container header__container">
         <nav class="header__navigation">
-          <!-- <a href="./index.html"><span>WEB</span><span>STUDIO</span></a> -->
-          <a class="logo" href="./index.html"
+          <a class="logo header__logo" href="./index.html"
             >Web<span class="logo--dark-part">Studio</span></a
           >
-          <ul class="header__list">
-            <li class="header_list_item">
-              <a class="header__link" href="./index.html">Portfolio</a>
+          <ul class="header__pagination-ul">
+            <li class="header__pagination-li">
+              <a class="header__pagination-item" href="./index.html"
+                >Portfolio</a
+              >
             </li>
-            <li class="header_list_item">
-              <a class="header__link" href="">Contacts</a>
+            <li class="header__pagination-li">
+              <a class="header__pagination-item" href="">Contacts</a>
             </li>
-            <li class="header_list_item">
-              <a class="header__link" href="">Studio</a>
+            <li class="header__pagination-li">
+              <a class="header__pagination-item" href="">Studio</a>
             </li>
           </ul>
         </nav>
         <address class="header__address">
-          <ul class="flex">
-            <li class="header__address-item">
-              <a class="header__address" href="mailto:info@devstudio.com"
+          <ul class="header__address-ul">
+            <li class="header__address-li">
+              <a class="header__address-item" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header__address-item">
-              <a class="header__address" href="tel:+110001111111"
+            <li class="header__address-li">
+              <a class="header__address-item" href="tel:+110001111111"
                 >+11 (000) 111-11-12</a
               >
             </li>
@@ -73,39 +74,44 @@
       <!-- ⚡ Hero Section -->
       <section class="hero">
         <div class="container hero__container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <h1 class="hero-title">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <button class="button hero__button" type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
       <!-- ⚡ Benefits (or Features) Section -->
       <section class="benefits">
-        <div class="container">
+        <div class="container benefits__container">
           <h2 class="visually-hidden">Benefits</h2>
-          <ul class="benefits__container">
+          <ul class="benefits__list">
             <li>
-              <h3 class="three_title three_title_benefits">Strategy</h3>
+              <h3 class="subtitle">Strategy</h3>
               <p class="body-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li>
-              <h3 class="three_title three_title_benefits">Punctuality</h3>
+              <h3 class="subtitle">Punctuality</h3>
               <p class="body-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li>
-              <h3 class="three_title three_title_benefits">Diligence</h3>
+              <h3 class="subtitle">Diligence</h3>
               <p class="body-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li>
-              <h3 class="three_title three_title_benefits">Technologies</h3>
+              <h3 class="subtitle">Technologies</h3>
               <p class="body-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -117,44 +123,52 @@
 
       <!-- ⚡ Team Section -->
       <section class="team">
-        <div class="container">
-          <h2 class="two_title">Our Team</h2>
-          <ul class="team__container">
-            <li class="team__item">
+        <div class="container team__container">
+          <h2 class="main_title">Our Team</h2>
+          <ul class="team__list">
+            <li class="team__card">
               <img
                 src="./images/team-01.jpg"
                 alt="Photo of the Mark Guerrero"
                 width="100%"
               />
-              <h3 class="three_title">Mark Guerrero</h3>
-              <p class="body-text">Product Designer</p>
+              <div class="team__card-holder">
+                <h3 class="subtitle subtitle--center">Mark Guerrero</h3>
+                <p class="body-text body-text--center">Product Designer</p>
+              </div>
             </li>
-            <li class="team__item">
+            <li class="team__card">
               <img
                 src="./images/team-02.jpg"
                 alt="Photo of the Tom Ford"
                 width="100%"
               />
-              <h3 class="three_title">Tom Ford</h3>
-              <p class="body-text">Frontend Developer</p>
+              <div class="team__card-holder">
+                <h3 class="subtitle subtitle--center">Tom Ford</h3>
+                <p class="body-text body-text--center">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team__item">
+            <li class="team__card">
               <img
                 src="./images/team-03.jpg"
                 alt="Photo of the Camila Garcia"
                 width="100%"
               />
-              <h3 class="three_title">Camila Garcia</h3>
-              <p class="body-text">Marketing</p>
+              <div class="team__card-holder">
+                <h3 class="subtitle subtitle--center">Camila Garcia</h3>
+                <p class="body-text body-text--center">Marketing</p>
+              </div>
             </li>
-            <li class="team__item">
+            <li class="team__card">
               <img
                 src="./images/team-04.jpg"
                 alt="Photo of the Daniel Wilson"
                 width="100%"
               />
-              <h3 class="three_title">Daniel Wilson</h3>
-              <p class="body-text">UI Designer</p>
+              <div class="team__card-holder">
+                <h3 class="subtitle subtitle--center">Daniel Wilson</h3>
+                <p class="body-text body-text--center">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -162,67 +176,79 @@
 
       <!-- ⚡ Portfolio Section -->
       <section class="portfolio">
-        <div class="container">
-          <h2 class="two_title">Our Portfolio</h2>
-          <ul>
-            <li>
+        <div class="container portfolio__container">
+          <h2 class="main_title">Our Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__card">
               <img
                 src="./images/portfolio_01.jpg"
                 alt="purple interface example"
-                width="360"
+                width="100%"
               />
-              <h3 class="three_title">Banking App</h3>
-              <p class="body-text">App</p>
+              <div class="portfolio__card-holder">
+                <h3 class="subtitle">Banking App</h3>
+                <p class="body-text">App</p>
+              </div>
             </li>
 
-            <li>
+            <li class="portfolio__card">
               <img
                 src="./images/portfolio_02.jpg"
                 alt="read the qr code with phone"
-                width="360"
+                width="100%"
               />
-              <h3 class="three_title">Cashless Payment</h3>
-              <p class="body-text">Marketing</p>
+              <div class="portfolio__card-holder">
+                <h3 class="subtitle">Cashless Payment</h3>
+                <p class="body-text">Marketing</p>
+              </div>
             </li>
 
-            <li>
+            <li class="portfolio__card">
               <img
                 src="./images/portfolio_03.jpg"
                 alt="example of the same color scheme on a phone and laptop"
-                width="360"
+                width="100%"
               />
-              <h3 class="three_title">Meditation App</h3>
-              <p class="body-text">App</p>
+              <div class="portfolio__card-holder">
+                <h3 class="subtitle">Meditation App</h3>
+                <p class="body-text">App</p>
+              </div>
             </li>
 
-            <li>
+            <li class="portfolio__card">
               <img
                 src="./images/portfolio_04.jpg"
                 alt="phone in the car"
-                width="360"
+                width="100%"
               />
-              <h3 class="three_title">Taxi Service</h3>
-              <p class="body-text">Marketing</p>
+              <div class="portfolio__card-holder">
+                <h3 class="subtitle">Taxi Service</h3>
+                <p class="body-text">Marketing</p>
+              </div>
             </li>
 
-            <li>
+            <li class="portfolio__card">
               <img
                 src="./images/portfolio_05.jpg"
                 alt="demonstration of stylish wallpapers for mobile phones"
-                width="360"
+                width="100%"
               />
-              <h3 class="three_title">Screen Illustrations</h3>
-              <p class="body-text">Design</p>
+              <div class="portfolio__card-holder">
+                <h3 class="subtitle">Screen Illustrations</h3>
+                <p class="body-text">Design</p>
+              </div>
             </li>
 
-            <li>
+            <li class="portfolio__card">
               <img
                 src="./images/portfolio_06.jpg"
                 alt="young girl with iPhone"
-                width="360"
+                width="100%"
               />
-              <h3 class="three_title">Online Courses</h3>
-              <p class="body-text">Marketing</p>
+              <div class="portfolio__card-holder">
+                <h3 class="subtitle">Online Courses</h3>
+                <p class="body-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -231,13 +257,14 @@
 
     <!-- ⚡ Footer section -->
     <footer class="footer">
-      <div class="container">
-        <a class="logo" href="./index.html"
+      <div class="container footer__container">
+        <a class="logo footer__logo" href="./index.html"
           >Web<span class="logo--light-part">Studio</span></a
         >
         <p class="body-text body-text--light">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
+          Increase the flow of customers and <br />
+          sales for your business with digital <br />
+          marketing & growth solutions.
         </p>
       </div>
     </footer>

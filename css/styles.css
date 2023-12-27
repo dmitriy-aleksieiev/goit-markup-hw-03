@@ -1,33 +1,39 @@
 /* ⭐ PART I ROOT */
 
 :root {
-/* fonts */
---main-font: "Roboto", sans-serif;
---logo-font: "Raleway", sans-serif;
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
 
-/* colors */
---accent-main-color: #4d5ae5;  
---accent-second-color: #404bbf;
---auxiliary-one-color: #31d0aa;
---servo-first-color: #f4f4fd;
---servo-second-color: #8e8f99;
---servo-third-color: #e7e9fc;
---dark-main-color: #2e2f42;
---dark-second-color: #434455;
---light-main-color: #ffffff;
---light-second-color: #f4f4fd;
---accent-main-color: #4d5ae5;  
+  /* colors */
+  --accent-main-color: #4d5ae5;
+  --accent-second-color: #404bbf;
+  --auxiliary-one-color: #31d0aa;
+  --servo-first-color: #f4f4fd;
+  --servo-second-color: #8e8f99;
+  --servo-third-color: #e7e9fc;
+  --dark-main-color: #2e2f42;
+  --dark-second-color: #434455;
+  --light-main-color: #ffffff;
+  --light-second-color: #f4f4fd;
+  --accent-main-color: #4d5ae5;
 
-/* other */
-/_ --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* other */
+  --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ⭐ PART II GLOBAL & HIDDEN */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--dark-second-color);
+  background-color: var(--light-main-color);
 }
 
 a {
@@ -72,7 +78,7 @@ img {
 
 .container {
   width: 1158px;
-  /* TODO: max-width:  */
+  /* TODO: max-width: 1158px  */
   padding-left: 15px;
   padding-right: 15px;
 
@@ -91,84 +97,38 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  padding: 188px 0;
 }
 
+.benefits__container {
+  padding: 120px 0;
+}
+
+.team__container {
+  padding: 120px 0;
+}
+
+.portfolio__container {
+  padding: 120px 0;
+}
+
+.footer__container {
+  padding: 100px 0;
+}
+
+.hero,
+.footer {
+  background-color: var(--dark-main-color);
+}
+
+.team {
+  background-color: var(--light-second-color);
+}
 
 /* ⭐ PART IV TYPOGRAPHY   */
 
-.logo {
-  margin-right: 76px;
-
-  padding: 25px 0;
-
-  color: #2e2f42;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color:var(--accent-main-color);
-
-}
-
-/* .logo--color-part {
-  color: var(--accent-main-color);
-} */
-
-.logo--dark-part {
-  color: #2e2f42;
-}
-
-.logo--light-part {
-  color: #f4f4fd;
-}
-
-.header__link {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: #2e2f42;
-
-  display: block;
-  padding: 24px 0;
-}
-
-/* .header_list_item {
-  padding: 24px 0;
-} */
-
-.header__link:hover,
-.header__link:focus {
-  color: #404bbf;
-}
-
-.header__address {
-  margin-left: auto;
-
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-style: normal;
-
-  color: #434455;
-}
-
-.header__address-item {
-  display: block;
-  padding: 24px;
-}
-
-.header__address:hover,
-.header__address:focus {
-  color: #404bbf;
-}
-
 .hero-title {
-  padding-top: 188px;
   padding-bottom: 40px;
 
   font-size: 56px;
@@ -176,37 +136,38 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
 
-  color: #ffffff;
-
   text-align: center;
+
+  color: var(--light-main-color);
 }
 
-.two_title {
-  font-size: 36px;
+.main_title {
+  padding-bottom: 72px;
 
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  color: #2e2f42;
-
   text-align: center;
+
+  color: var(--dark-main-color);
 }
 
-.three_title {
+.subtitle {
+  margin-bottom: 8px;
+
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
-
-  text-align: center;
+  color: var(--dark-main-color);
 }
 
-.three_title_benefits {
-  text-align: left;
+.subtitle--center {
+  text-align: center;
 }
 
 .body-text {
@@ -215,39 +176,60 @@ img {
   letter-spacing: 0.02em;
 }
 
-.body-text--light {
-  color: #f4f4fd;
+.body-text--center {
+  text-align: center;
 }
 
-/* ⭐ PART IV BUTTONS   */
+.body-text--light {
+  color: var(--light-second-color);
+}
 
+/* ⭐ PART V ELEMENTS & BUTTONS   */
+/* LOGO */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--accent-main-color);
+}
+
+.logo--dark-part {
+  color: var(--dark-main-color);
+}
+
+.logo--light-part {
+  color: var(--light-second-color);
+}
+
+/* BUTTONS */
 .button {
   padding: 16px 32px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 188px;
 
+  border-radius: 4px;
   /* font-family: "Roboto", sans-serif; */
   font-family: inherit;
-  border-radius: 4px;
-  background-color: #4d5ae5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: var(--light-main-color);
+  background-color: var(--accent-main-color);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #404bbf;
+  background-color: var(--accent-second-color);
 }
-
 
 /*
   |==============================
@@ -256,81 +238,153 @@ img {
 */
 
 .header__navigation {
-
-}
-
-.header__pagination {
-
-}
-
-.header__pagination-item {
-
-}
-
-.header__address {
-
-}
-
-.header__address-item {
-
-}
-
-
-
-
-
-
-
-
-/* ⭐ PART V SECTION & CONTAINER  */
-
-.hero,
-.footer {
-  background-color: #2e2f42;
-}
-
-.team {
-  background-color: #f4f4fd;
-}
-
-
-
-.flex {
-  display: flex;
-}
-
-.header__list {
-  display: flex;
-
-  gap: 40px;
-}
-
-.header__navigation {
   display: flex;
   align-items: center;
 }
 
-/* ⭐ PART VI OTHER   */
+.header__logo {
+  margin-right: 76px;
+  padding: 25px 0;
+}
 
-.team__item {
-  background-color: #ffffff;
-  margin-right: 24px;
+.header__pagination-ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header__pagination-li {
+}
+
+.header__pagination-item {
+  display: block;
+  padding: 24px 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-main-color);
+}
+
+.header__pagination-item:hover,
+.header__pagination-item:focus {
+  color: var(--accent-second-color);
+}
+
+.header__address {
+  margin-left: auto;
+}
+
+.header__address-ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header__address-li {
+}
+
+.header__address-item {
+  display: block;
+  padding: 24px 0;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+
+  color: var(--dark-second-color);
+}
+
+.header__address-item:hover,
+.header__address-item:focus {
+  color: var(--accent-second-color);
+}
+
+/*
+  |==============================
+  | HERO ☘
+  |==============================
+*/
+
+.hero__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  |==============================
+  | BENEFITS ☘
+  |==============================
+*/
+
+.benefits__list {
+  display: flex;
+}
+
+/*
+  |==============================
+  | TEAM ☘
+  |==============================
+*/
+
+.team__list {
+  display: flex;
+  gap: 24px;
+}
+
+.team__card {
+  background-color: var(--light-main-color);
+  /* margin-right: 24px; */
+
   width: calc((100% - 72px) / 4);
+
+  border-radius: 0px 0px 4px 4px;
+
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team__item:last-child {
+/* .team__card:last-child {
   margin-right: 0;
+} */
+
+.team__card-holder {
+  padding: 32px 16px;
 }
 
+/*
+  |==============================
+  | PORTFOLIO ☘
+  |==============================
+*/
 
-
-.benefits__container {
+.portfolio__list {
   display: flex;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
-.team__container {
+.portfolio__card {
+  width: calc((100% - 48px) / 3);
+
+  background-color: var(--light-main-color);
+
+  border: 1px solid var(--servo-third-color);
+}
+
+.portfolio__card-holder {
+  padding: 32px 16px;
+}
+
+/*
+  |==============================
+  | FOOTER ☘
+  |==============================
+*/
+.footer__logo {
   display: flex;
-  justify-content: center;
+  padding: 18px 0;
 }
